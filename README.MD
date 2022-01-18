@@ -1,4 +1,4 @@
-# Full cycle Docker Challenge 2
+# Full Cycle Docker Challenge 2
 
 ## Instruções do desafio
 
