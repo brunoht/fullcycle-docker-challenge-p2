@@ -15,7 +15,7 @@ services:
       context: app
     container_name: app
     entrypoint: dockerize -wait tcp://database:3306 -timeout 20s node index.js
-    restart: always
+    restart: unless-stopped
     volumes: 
       - ./app:/usr/src/app
     tty: true
@@ -29,6 +29,8 @@ services:
     build:
       context: nginx
     container_name: nginx
+    entrypoint: dockerize -wait http://app:3000 -timeout 20s /docker-entrypoint.sh
+    command: nginx -g 'daemon off;'
     restart: always
     tty: true
     ports:
