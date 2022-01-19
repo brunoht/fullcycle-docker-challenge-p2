@@ -34,7 +34,7 @@ services:
     restart: always
     tty: true
     volumes:
-      - ./mysql:/var/lib/mysql
+      - lohl-volume:/var/lib/mysql
     environment:
       - MYSQL_DATABASE=app_database
       - MYSQL_ROOT_PASSWORD=root
@@ -44,3 +44,6 @@ services:
 networks:
   lohl-net:
     driver: bridge
+
+volumes:
+  lohl-volume:
