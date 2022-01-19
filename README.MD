@@ -45,8 +45,8 @@ Aqui possui tudo o que é necessário para desenvolver e executar uma aplicaçã
 
 - Ao rodar o docker-compose tudo o que é necessário para abrir a aplicação no navegador, por exemplo, será automaticamente executado. Basta iniciar e sair usando o que já tem pronto!
 
-- Ao mesmo tempo, você terá todas as ferramentas necessárias para continuar a desenvolver esse projeto. Dentro de cada container o ambiente de desenvolvimento já estão o Node e o NPM. Se precisar adicionar novas dependências ao projeto, basta entrar no container e executar a instalação da dependência. Quando não precisar usar mais, basta sair e voltar a editar o seu código na sua máquina mesmo.
+- Ao mesmo tempo, você terá todas as ferramentas necessárias para continuar a desenvolver esse projeto. Dentro de cada container, o ambiente de desenvolvimento já contêm o Node e o NPM. Se precisar adicionar novas dependências ao projeto, basta entrar no container e executar a instalação da dependência. Quando não precisar usar mais, basta sair e voltar a editar o seu código na sua máquina mesmo.
 
 ## O que não esperar deste projeto?
 
-Este ambiente foi estruturado para servir localmente sua aplicação, seja para testes ou desenvolvimento. Portanto, não espere que ela seja adequada para colocar para rodar num servidor em produção!
+Este ambiente foi estruturado para servir localmente sua aplicação, seja para testes ou desenvolvimento. Portanto, não espere que este seja adequado para colocar para rodar num servidor em produção!
