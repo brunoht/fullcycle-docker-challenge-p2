@@ -1,6 +1,6 @@
 FROM nginx:latest
 
-RUN apt update && apt install vim -y
+RUN apt update && apt install vim wget -y
 
 COPY default.conf /etc/nginx/conf.d/
 

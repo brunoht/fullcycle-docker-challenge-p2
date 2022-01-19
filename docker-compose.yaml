@@ -5,19 +5,39 @@ services:
     build:
       context: app
     container_name: app
+    restart: always
     volumes: 
       - ./app:/usr/src/app
     tty: true
     networks:
       - lohl-net
+    depends_on:
+      - database
   
   nginx:
     build:
       context: nginx
     container_name: nginx
+    restart: always
     tty: true
     ports:
       - 8080:80
+    networks:
+      - lohl-net
+    depends_on:
+      - app
+
+  database:
+    image: mysql:5.7
+    command: --innodb-use-native-aio=0
+    container_name: mysql
+    restart: always
+    tty: true
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=app_database
+      - MYSQL_ROOT_PASSWORD=root
     networks:
       - lohl-net
 
