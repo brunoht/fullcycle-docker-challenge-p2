@@ -27,6 +27,12 @@ Para rodar a aplicação basta executar o seguinte comando:
 docker-compose up -d
 ```
 
+Feito isso, no computador onde você iniciou a aplicação com o Docker, abra o seu navegador e digite:
+
+```
+http://localhost:8080
+```
+
 ### Controlando individualmente cada container
 
 Caso prefira executar individualmente cada container, você poderá fazê-lo, seguindo as intruções contidas em cada um dos projetos dessa aplicação.
