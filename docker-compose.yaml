@@ -1,6 +1,15 @@
 version: '3.8'
 
 services:
+
+  appworker:
+    build:
+      context: app
+    container_name: worker
+    volumes: 
+      - ./app:/usr/src/app
+    command: npm install
+
   app:
     build:
       context: app
@@ -13,7 +22,8 @@ services:
       - lohl-net
     depends_on:
       - database
-  
+      - appworker
+
   nginx:
     build:
       context: nginx
