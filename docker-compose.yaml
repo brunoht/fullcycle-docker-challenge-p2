@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: app
+    container_name: app
+    volumes: 
+      - ./app:/usr/src/app
+    tty: true
+    networks:
+      - lohl-net
+  
+  nginx:
+    build:
+      context: nginx
+    container_name: nginx
+    tty: true
+    ports:
+      - 8080:80
+    networks:
+      - lohl-net
+
+networks:
+  lohl-net:
+    driver: bridge

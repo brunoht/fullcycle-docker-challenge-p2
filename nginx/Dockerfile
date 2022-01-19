@@ -2,7 +2,7 @@ FROM nginx:latest
 
 RUN apt update && apt install vim -y
 
-# COPY nginx.conf /etc/nginx/nginx.conf
+COPY default.conf /etc/nginx/conf.d/
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 

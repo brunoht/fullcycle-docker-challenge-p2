@@ -31,5 +31,5 @@ docker-compose up -d
 
 Caso prefira executar individualmente cada container, você poderá fazê-lo, seguindo as intruções contidas em cada um dos projetos dessa aplicação.
 
-> Leia o arquivo README contido em cada diretório desta aplicação para onter toda a instrução necessária sobre o container.
+> Leia o arquivo README contido em cada diretório desta aplicação para obter toda a instrução necessária sobre o container.
 
