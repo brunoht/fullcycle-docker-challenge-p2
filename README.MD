@@ -35,7 +35,7 @@ Caso prefira executar individualmente cada container, você poderá fazê-lo, se
 
 ## Pré-requisitos
 
-- Você só precisar ter o GIT e Docker instalado em seu computador. Todas as dependências para o desenvolvimento e execução da aplicação já estão dentro dos containers.
+- Você só precisa ter o GIT e Docker instalado em seu computador. Todas as dependências para o desenvolvimento e execução da aplicação já estão dentro dos containers.
 
 - Espera-se que você possua conhecimentos prévios sobre GIT, Docker e Docker Compose (o suficiente para você poder baixar este repositório e colocar a aplicação para rodar), além de NodeJS, NPM, MySQL e NGINX (caso você pretenda desenvolver algo aqui).
 
